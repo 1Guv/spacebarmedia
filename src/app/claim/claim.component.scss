@@ -1,0 +1,45 @@
+#claim {
+
+    .claim-container {
+        width: 600px;
+        min-width: 290px;
+        height: 290px;
+        background: #FFFFFF;
+        box-shadow: 0 4px 0 0 rgba(0,0,0,0.50);
+        border-radius: 4px;
+    }
+
+    h1 {
+        margin-top: 26px;
+        height: 100px;
+        font-family: HelveticaNeue-Bold;
+        font-size: 45px;
+        color: #252525;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    h2 {
+        margin-top: 20.5px;
+        font-family: HelveticaNeue-Medium;
+        font-size: 30px;
+        color: #FF4DC1;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 35px;
+        width: 100%;
+    }
+
+    button {
+        width: 193px;
+        height: 55px;
+        margin-top: 20.5px;
+        background-image: linear-gradient(-180deg, #FF78CF 0%, #FF18B0 99%);
+        box-shadow: 0 2px 0 0 #B00E78;
+        border-radius: 27.5px;
+        color: white;
+    }
+
+}
