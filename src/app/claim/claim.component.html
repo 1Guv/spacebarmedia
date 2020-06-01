@@ -1,6 +1,6 @@
 <div id="claim" class="container">
     <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="claim-container text-center">
+        <div *ngIf="claim" class="claim-container text-center">
             <h1>{{ claim.amount }} {{ claim.prize }} <br> on {{ claim.game }}</h1>
             <h2>00: {{ claim.countdown }}</h2>
             <button>Claim now</button>
