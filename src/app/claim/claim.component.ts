@@ -12,15 +12,14 @@ export class ClaimComponent implements OnInit {
 
   claim: ClaimClass;
 
-  constructor(private claimService: ClaimService, private http: HttpClient) {
+  constructor(private claimService: ClaimService, private http: HttpClient) {}
+
+  ngOnInit() {
     this.claimService.getClaims()
     .subscribe((data: ClaimClass) => {
       console.log('data', data);
       this.claim = data;
     })
-  }
-
-  ngOnInit() {
   }
 
 }
