@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClaimComponent } from './claim/claim.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClaimComponent
+    ClaimComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
