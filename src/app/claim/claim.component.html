@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div *ngIf="claim" class="claim-container text-center">
             <h1>{{ claim.amount }} {{ claim.prize }} <br> on {{ claim.game }}</h1>
-            <h2>00:{{ claim.countdown }}</h2>
+            <h2>{{ claim.countdown | minuteSeconds }}</h2>
             <button [routerLink]="['/success', claim.amount]">Claim now</button>
         </div>
     </div>

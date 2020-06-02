@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClaimComponent } from './claim/claim.component';
 import { SuccessComponent } from './success/success.component';
+import { MinuteSecondsPipe } from './_pipes/minuteSeconds.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClaimComponent,
-    SuccessComponent
+    SuccessComponent,
+    MinuteSecondsPipe,
   ],
   imports: [
     BrowserModule,

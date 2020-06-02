@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClaimClass } from '../_models/claims';
 import { ClaimService } from '../_services/claim.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-claim',
@@ -12,14 +11,14 @@ export class ClaimComponent implements OnInit {
 
   claim: ClaimClass;
 
-  constructor(private claimService: ClaimService, private http: HttpClient) {}
+  constructor(private claimService: ClaimService) {}
 
   ngOnInit() {
     this.claimService.getClaims()
-    .subscribe((data: ClaimClass) => {
-      console.log('data', data);
-      this.claim = data;
-    })
+      .subscribe((claim: ClaimClass) => {
+        console.log('claim', claim);
+        this.claim = claim;
+      })
   }
 
 }

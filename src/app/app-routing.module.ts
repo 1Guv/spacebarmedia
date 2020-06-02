@@ -5,8 +5,8 @@ import { ClaimComponent } from './claim/claim.component';
 
 
 const routes: Routes = [
-  { path: "", component: ClaimComponent},
-  {path: 'success/:amount', component: SuccessComponent}
+  { path: "", component: ClaimComponent },
+  { path: 'success/:amount', component: SuccessComponent }
 ];
 
 @NgModule({
